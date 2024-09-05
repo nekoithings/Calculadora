@@ -42,3 +42,17 @@ function convertKgToGrams() {
     const grams = kg * 1000;
     display.value = grams.toFixed(2);
 }
+
+function convertBarToAtm() {
+    const display = document.getElementById('display');
+    const bar = parseFloat(display.value);
+
+    if (isNaN(bar)) {
+        alert("Por favor, ingrese un valor numérico válido en bar");
+        clearDisplay();
+        return;
+    }
+
+    const atm = bar * 0.986923; // Conversión de bar a atmósferas
+    display.value = atm.toFixed(2);
+}
