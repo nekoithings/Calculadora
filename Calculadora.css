@@ -1,11 +1,17 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #ffd9b3; /* Naranja pastel */
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .calculator {

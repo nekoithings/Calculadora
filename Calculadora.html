@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="Calculadora.css">
 </head>
 <body>
-    <div ><h2>Proyecto Calculadora</h2></div>
-    <div ><h3>Autor John</h3></div>
+    <div class="title-container">
+        <h2>Proyecto Calculadora</h2>
+        <h3>Autor John</h3>
+    </div>
 
-    <div class=">calculator">
+    <div class="calculator">
         <input type="text" id="display" disabled>
         <div class="buttons">
             <button onclick="convertToFahrenheit()">GR</button>
@@ -34,7 +36,6 @@
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="appendToDisplay('/')">/</button>
             <button onclick="calculateResult()">=</button>
-            
         </div>
     </div>
     <script src="Calculadora.js"></script>
