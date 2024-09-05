@@ -56,3 +56,18 @@ function convertBarToAtm() {
     const atm = bar * 0.986923; // Conversión de bar a atmósferas
     display.value = atm.toFixed(2);
 }
+
+function convertCOPtoUSD() {
+    const display = document.getElementById('display');
+    const cop = parseFloat(display.value);
+
+    if (isNaN(cop)) {
+        alert("Por favor, ingrese un valor numérico válido en pesos colombianos");
+        clearDisplay();
+        return;
+    }
+
+    const conversionRate = 0.00027; // Tasa de cambio estimada de COP a USD
+    const usd = cop * conversionRate;
+    display.value = usd.toFixed(2);
+}
