@@ -28,3 +28,17 @@ function convertToFahrenheit() {
     const fahrenheit = (celsius * 9/5) + 32; 
     display.value = fahrenheit.toFixed(2);
 }
+
+function convertKgToGrams() {
+    const display = document.getElementById('display');
+    const kg = parseFloat(display.value);
+
+    if (isNaN(kg)) {
+        alert("Por favor, ingrese un valor numérico válido en kilogramos");
+        clearDisplay();
+        return;
+    }
+
+    const grams = kg * 1000;
+    display.value = grams.toFixed(2);
+}
